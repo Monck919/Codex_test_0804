@@ -8,9 +8,9 @@ This repository contains a sample Python script for detecting and saving faces f
    ```bash
    pip install opencv-python
    ```
-2. Place the video file path in `video_path` in `face_capture.py` (default `sample_video.mp4`).
-3. Run the script:
+2. Run the script with optional arguments:
    ```bash
-   python face_capture.py
+   python face_capture.py --video sample_video.mp4 --output faces
    ```
-   Detected faces will be saved to the `faces/` directory.
+   - `--video` specifies the video file or webcam index (e.g., `0`).
+   - `--output` sets the directory where detected faces will be saved.
